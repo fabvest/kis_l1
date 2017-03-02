@@ -5,10 +5,10 @@ package Data;
  */
 public class Criterion {
     public static final String[] timeCriterion = {
-            "Until 20 weeks",
+            "Until 20 weeks", // 1 балл
             "Until 15 weeks",
             "Until 10 weeks",
-            "Until 5 weeks"
+            "Until 5 weeks"  // 4 балла
     };
 
     public static final String[] qualityCriterion ={

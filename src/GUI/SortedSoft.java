@@ -71,20 +71,13 @@ public class SortedSoft extends JDialog {
 
         SortFunc sortFunc = new SortFunc(sub);
         button1.setText("Find");
-        button1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        button1.addActionListener((ActionEvent e) -> {
 
-                        TableModel model2 = new MyTableModel(
-                                sortFunc.sortWithParams(comboBox1.getSelectedIndex() + 1,
-                                        comboBox2.getSelectedIndex() + 1,
-                                        comboBox3.getSelectedIndex() + 1,
-                                        comboBox5.getSelectedIndex() + 1,
-                                        comboBox4.getSelectedIndex() + 1));
-                        table1.setModel(model2);
-                        System.out.println("new ui");
+//                        TableModel model2 = new MyTableModel(
+//                                sortFunc.sortWithParams();
+//                        table1.setModel(model2);
+//                        System.out.println("new ui");
 
-            }
         });
 
     }

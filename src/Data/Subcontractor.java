@@ -7,6 +7,16 @@ import java.util.Random;
  */
 public class Subcontractor {
     private int id;
+    private double rang;
+
+    public double getRang() {
+        return rang;
+    }
+
+    public void setRang(double rang) {
+        this.rang = rang;
+    }
+
     private String name;
     private Criteria criteria;
     private Reliability reliability;
