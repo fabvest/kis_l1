@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9124f10-f992-4b0e-9ebc-76ec3ec446a6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/soft.iml" afterPath="$PROJECT_DIR$/soft.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SortFunc.java" afterPath="$PROJECT_DIR$/src/Controller/SortFunc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data/Criterion.java" afterPath="$PROJECT_DIR$/src/Data/Criterion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data/Subcontractor.java" afterPath="$PROJECT_DIR$/src/Data/Subcontractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data/Criteria.java" afterPath="$PROJECT_DIR$/src/Data/Criteria.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/ResultTableModel.java" afterPath="$PROJECT_DIR$/src/GUI/ResultTableModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/SortedSoft.java" afterPath="$PROJECT_DIR$/src/GUI/SortedSoft.java" />
     </list>
     <ignored path="soft.iws" />
@@ -31,72 +28,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SortedSoft.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/SortedSoft.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SortedSoft.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/SortedSoft.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Criterion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Data/Criterion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SortFunc.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/SortFunc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+            <state relative-caret-position="408">
+              <caret line="110" column="56" lean-forward="false" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#flagWeight#0;class#SortFunc#0" expanded="false" />
-                <element signature="method#findWeight#0;class#SortFunc#0" expanded="false" />
                 <element signature="method#replaceList#0;class#SortFunc#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Subcontractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Data/Subcontractor.java">
+      <file leaf-file-name="SortedSoft.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/SortedSoft.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="436">
+              <caret line="79" column="71" lean-forward="false" selection-start-line="79" selection-start-column="71" selection-end-line="79" selection-end-column="71" />
               <folding>
-                <element signature="e#212#213#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
+      <file leaf-file-name="Criteria.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Data/Criteria.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="15" column="82" lean-forward="false" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+              <folding>
+                <element signature="e#259#260#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultTableModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/ResultTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1462">
+              <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+              <folding>
+                <element signature="e#493#494#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#2188#2189#0" expanded="true" />
+                <element signature="e#2220#2221#0" expanded="true" />
+                <element signature="e#2300#2301#0" expanded="true" />
+                <element signature="e#2335#2336#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTableModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GUI/MyTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="784">
+              <caret line="113" column="8" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="28" />
+              <folding>
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#580#581#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,16 +124,16 @@
         <option value="$PROJECT_DIR$/src/SortedSoft.java" />
         <option value="$PROJECT_DIR$/src/GUI/MainDialog.form" />
         <option value="$PROJECT_DIR$/src/GUI/MainDialog.java" />
-        <option value="$PROJECT_DIR$/src/Data/Criteria.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Data/Reliability.java" />
         <option value="$PROJECT_DIR$/src/GUI/MyTableModel.java" />
-        <option value="$PROJECT_DIR$/src/GUI/ResultTableModel.java" />
         <option value="$PROJECT_DIR$/src/GUI/SortedSoft.form" />
         <option value="$PROJECT_DIR$/src/Data/Criterion.java" />
-        <option value="$PROJECT_DIR$/src/GUI/SortedSoft.java" />
         <option value="$PROJECT_DIR$/src/Test/Test.java" />
         <option value="$PROJECT_DIR$/src/Data/Subcontractor.java" />
+        <option value="$PROJECT_DIR$/src/Data/Criteria.java" />
+        <option value="$PROJECT_DIR$/src/GUI/ResultTableModel.java" />
+        <option value="$PROJECT_DIR$/src/GUI/SortedSoft.java" />
         <option value="$PROJECT_DIR$/src/Controller/SortFunc.java" />
       </list>
     </option>
@@ -193,8 +188,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -767,8 +762,18 @@
       <workItem from="1488136982769" duration="4233000" />
       <workItem from="1488195421567" duration="4936000" />
       <workItem from="1488227722888" duration="207000" />
-      <workItem from="1488447142962" duration="8485000" />
+      <workItem from="1488447142962" duration="9405000" />
+      <workItem from="1488481781066" duration="2122000" />
+      <workItem from="1488527850969" duration="3343000" />
     </task>
+    <task id="LOCAL-00001" summary="add new methods (find flag and find weight)">
+      <created>1488460496721</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1488460496721</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -780,23 +785,32 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39899000" />
+    <option name="totallyTimeSpent" value="46284000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1672" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3118393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3109426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1171875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122068234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -827,9 +841,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add new methods (find flag and find weight)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new methods (find flag and find weight)" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -867,8 +885,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#flagWeight#0;class#SortFunc#0" expanded="false" />
-            <element signature="method#findWeight#0;class#SortFunc#0" expanded="false" />
             <element signature="method#replaceList#0;class#SortFunc#0" expanded="false" />
           </folding>
         </state>
@@ -933,8 +949,6 @@
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#flagWeight#0;class#SortFunc#0" expanded="false" />
-            <element signature="method#findWeight#0;class#SortFunc#0" expanded="false" />
             <element signature="method#replaceList#0;class#SortFunc#0" expanded="false" />
           </folding>
         </state>
@@ -999,8 +1013,6 @@
           <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#flagWeight#0;class#SortFunc#0" expanded="false" />
-            <element signature="method#findWeight#0;class#SortFunc#0" expanded="false" />
             <element signature="method#replaceList#0;class#SortFunc#0" expanded="false" />
           </folding>
         </state>
@@ -1036,8 +1048,6 @@
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#flagWeight#0;class#SortFunc#0" expanded="false" />
-            <element signature="method#findWeight#0;class#SortFunc#0" expanded="false" />
             <element signature="method#replaceList#0;class#SortFunc#0" expanded="false" />
           </folding>
         </state>
@@ -1073,8 +1083,6 @@
           <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#flagWeight#0;class#SortFunc#0" expanded="false" />
-            <element signature="method#findWeight#0;class#SortFunc#0" expanded="false" />
             <element signature="method#replaceList#0;class#SortFunc#0" expanded="false" />
           </folding>
         </state>
@@ -1143,21 +1151,14 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/MainDialog.form">
-      <provider editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/MainDialog.java">
@@ -1167,29 +1168,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/MyTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/ResultTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GUI/SortedSoft.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Data/Reliability.java">
@@ -1200,29 +1187,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/Criteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/SortedSoft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1236,26 +1205,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Data/Subcontractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="187">
           <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/Criteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="82" lean-forward="false" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+          <folding>
+            <element signature="e#259#260#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/ResultTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+          <folding>
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2300#2301#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/SortedSoft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="79" column="71" lean-forward="false" selection-start-line="79" selection-start-column="71" selection-end-line="79" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/MyTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="113" column="8" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="28" />
+          <folding>
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/SortFunc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="103" column="26" lean-forward="true" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+        <state relative-caret-position="408">
+          <caret line="110" column="56" lean-forward="false" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#flagWeight#0;class#SortFunc#0" expanded="false" />
-            <element signature="method#findWeight#0;class#SortFunc#0" expanded="false" />
             <element signature="method#replaceList#0;class#SortFunc#0" expanded="false" />
           </folding>
         </state>

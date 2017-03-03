@@ -5,15 +5,20 @@ import Data.Reliability;
 import Data.Subcontractor;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-/**
- * Created by fab on 14.02.2017.
- */
+
 public class SortFunc {
     private List<Subcontractor> sub;
     private int count;
 
+    public List<Subcontractor> sort(int time, int quality, int price, int opportunities, int saifty){
+        int flag = flagWeight(time, quality, price, opportunities, saifty);
+        return sortWithParams(findWeight(time, quality, price, opportunities, saifty, flag), flag);
+
+    }
 
     public SortFunc() {
     }
@@ -101,7 +106,11 @@ public class SortFunc {
                 nSub.add(s);
             }
 
-            //TODO compare
+            nSub.sort((o1, o2) -> {
+                if (o1.getRang() > o2.getRang()) return -1;
+                if (o1.getRang() < o2.getRang()) return 1;
+                else return 0;
+            });
 
             return nSub;
         } else {

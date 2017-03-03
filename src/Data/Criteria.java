@@ -12,6 +12,10 @@ public class Criteria {
     private int opportunities;
     private int time;
 
+    public double getCriteria(){
+        return price * 0.25 + quality * 0.25 + opportunities * 0.25 + time * 0.25;
+    }
+
     public Criteria() {
         Random r = new Random();
 
