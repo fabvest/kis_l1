@@ -21,11 +21,12 @@ public class SortedSoft extends JDialog {
     private JComboBox<String> comboBox3;
     private JComboBox<String> comboBox4;
     private JTable table1;
-    private JRadioButton pattern1RadioButton;
-    private JRadioButton pattern2RadioButton;
-    private JRadioButton pattern3RadioButton;
+    private JRadioButton moreFastRadioButton;
+    private JRadioButton moreCheapRadioButton;
+    private JRadioButton moreSafeRadioButton;
     private JRadioButton userPreferencesRadioButton;
     private JComboBox<String> comboBox5;
+    private JRadioButton moreQualitativeRadioButton;
 
 
     public SortedSoft() {
@@ -40,10 +41,11 @@ public class SortedSoft extends JDialog {
         setSize(600, 400);
 
         ButtonGroup group = new ButtonGroup();
-        group.add(pattern1RadioButton);
-        group.add(pattern2RadioButton);
-        group.add(pattern3RadioButton);
         group.add(userPreferencesRadioButton);
+        group.add(moreFastRadioButton);
+        group.add(moreCheapRadioButton);
+        group.add(moreSafeRadioButton);
+        group.add(moreQualitativeRadioButton);
 
 
         comboBox1.addItem(Criterion.priceCriterion[0]);
@@ -77,16 +79,54 @@ public class SortedSoft extends JDialog {
         SortFunc sortFunc = new SortFunc(sub);
         button1.setText("Find");
         button1.addActionListener((ActionEvent e) -> {
+            TableModel model2;
 
-                        TableModel model2 = new ResultTableModel(
-                                sortFunc.sort(comboBox1.getSelectedIndex() + 1,
-                                        comboBox2.getSelectedIndex() + 1,
-                                        comboBox3.getSelectedIndex() + 1,
-                                        comboBox5.getSelectedIndex() + 1,
-                                        comboBox4.getSelectedIndex() + 1));
-                        table1.setModel(model2);
-                        System.out.println("new ui");
-
+            if (userPreferencesRadioButton.isSelected()) {
+                model2 = new ResultTableModel(
+                        sortFunc.sort(comboBox1.getSelectedIndex() + 1,
+                                comboBox2.getSelectedIndex() + 1,
+                                comboBox3.getSelectedIndex() + 1,
+                                comboBox5.getSelectedIndex() + 1,
+                                comboBox4.getSelectedIndex() + 1));
+                table1.setModel(model2);
+                System.out.println("new ui");
+            } else if (moreQualitativeRadioButton.isSelected()) {
+                model2 = new ResultTableModel(
+                        sortFunc.sort(2,
+                                4,
+                                2,
+                                3,
+                                3));
+                table1.setModel(model2);
+                System.out.println("new ui");
+            } else if (moreCheapRadioButton.isSelected()) {
+                model2 = new ResultTableModel(
+                        sortFunc.sort(3,
+                                2,
+                                4,
+                                2,
+                                3));
+                table1.setModel(model2);
+                System.out.println("new ui");
+            } else if (moreFastRadioButton.isSelected()) {
+                model2 = new ResultTableModel(
+                        sortFunc.sort(4,
+                                2,
+                                3,
+                                2,
+                                3));
+                table1.setModel(model2);
+                System.out.println("new ui");
+            } else if (moreSafeRadioButton.isSelected()) {
+                model2 = new ResultTableModel(
+                        sortFunc.sort(2,
+                                3,
+                                2,
+                                3,
+                                4));
+                table1.setModel(model2);
+                System.out.println("new ui");
+            }
         });
 
     }
@@ -117,11 +157,11 @@ public class SortedSoft extends JDialog {
         table1.setShowVerticalLines(true);
         scrollPane1.setViewportView(table1);
         final JPanel panel1 = new JPanel();
-        panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(14, 3, new Insets(0, 0, 0, 0), -1, -1));
+        panel1.setLayout(new com.intellij.uiDesigner.core.GridLayoutManager(15, 3, new Insets(0, 0, 0, 0), -1, -1));
         splitPane1.setLeftComponent(panel1);
         button1 = new JButton();
         button1.setText("Button");
-        panel1.add(button1, new com.intellij.uiDesigner.core.GridConstraints(13, 0, 1, 3, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel1.add(button1, new com.intellij.uiDesigner.core.GridConstraints(14, 0, 1, 3, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         comboBox1 = new JComboBox();
         panel1.add(comboBox1, new com.intellij.uiDesigner.core.GridConstraints(2, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         comboBox2 = new JComboBox();
@@ -135,10 +175,10 @@ public class SortedSoft extends JDialog {
         label2.setText("Code quality");
         panel1.add(label2, new com.intellij.uiDesigner.core.GridConstraints(4, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final com.intellij.uiDesigner.core.Spacer spacer1 = new com.intellij.uiDesigner.core.Spacer();
-        panel1.add(spacer1, new com.intellij.uiDesigner.core.GridConstraints(12, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
-        pattern3RadioButton = new JRadioButton();
-        pattern3RadioButton.setText("Pattern 3");
-        panel1.add(pattern3RadioButton, new com.intellij.uiDesigner.core.GridConstraints(11, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        panel1.add(spacer1, new com.intellij.uiDesigner.core.GridConstraints(13, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
+        moreSafeRadioButton = new JRadioButton();
+        moreSafeRadioButton.setText("More safe");
+        panel1.add(moreSafeRadioButton, new com.intellij.uiDesigner.core.GridConstraints(11, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label3 = new JLabel();
         label3.setText("Price for day");
         panel1.add(label3, new com.intellij.uiDesigner.core.GridConstraints(2, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
@@ -146,15 +186,16 @@ public class SortedSoft extends JDialog {
         label4.setText("Preference");
         panel1.add(label4, new com.intellij.uiDesigner.core.GridConstraints(0, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         userPreferencesRadioButton = new JRadioButton();
+        userPreferencesRadioButton.setSelected(true);
         userPreferencesRadioButton.setText("User preferences");
         panel1.add(userPreferencesRadioButton, new com.intellij.uiDesigner.core.GridConstraints(1, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        pattern2RadioButton = new JRadioButton();
-        pattern2RadioButton.setText("Pattern 2");
-        panel1.add(pattern2RadioButton, new com.intellij.uiDesigner.core.GridConstraints(10, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        pattern1RadioButton = new JRadioButton();
-        pattern1RadioButton.setSelected(false);
-        pattern1RadioButton.setText("Pattern 1");
-        panel1.add(pattern1RadioButton, new com.intellij.uiDesigner.core.GridConstraints(9, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        moreCheapRadioButton = new JRadioButton();
+        moreCheapRadioButton.setText("More cheap");
+        panel1.add(moreCheapRadioButton, new com.intellij.uiDesigner.core.GridConstraints(10, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        moreFastRadioButton = new JRadioButton();
+        moreFastRadioButton.setSelected(false);
+        moreFastRadioButton.setText("More fast");
+        panel1.add(moreFastRadioButton, new com.intellij.uiDesigner.core.GridConstraints(9, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         comboBox4 = new JComboBox();
         panel1.add(comboBox4, new com.intellij.uiDesigner.core.GridConstraints(6, 2, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_HORIZONTAL, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label5 = new JLabel();
@@ -168,8 +209,11 @@ public class SortedSoft extends JDialog {
         final com.intellij.uiDesigner.core.Spacer spacer2 = new com.intellij.uiDesigner.core.Spacer();
         panel1.add(spacer2, new com.intellij.uiDesigner.core.GridConstraints(7, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_CENTER, com.intellij.uiDesigner.core.GridConstraints.FILL_VERTICAL, 1, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_WANT_GROW, null, null, null, 0, false));
         final JLabel label7 = new JLabel();
-        label7.setText("Label");
+        label7.setText("Patterns");
         panel1.add(label7, new com.intellij.uiDesigner.core.GridConstraints(8, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        moreQualitativeRadioButton = new JRadioButton();
+        moreQualitativeRadioButton.setText("More qualitative");
+        panel1.add(moreQualitativeRadioButton, new com.intellij.uiDesigner.core.GridConstraints(12, 0, 1, 1, com.intellij.uiDesigner.core.GridConstraints.ANCHOR_WEST, com.intellij.uiDesigner.core.GridConstraints.FILL_NONE, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_SHRINK | com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_CAN_GROW, com.intellij.uiDesigner.core.GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
     }
 
     /**

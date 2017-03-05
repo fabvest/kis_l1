@@ -42,7 +42,7 @@ public class ResultTableModel implements TableModel {
             case 2:
                 return "Criteria";
             case 3:
-                return "Saifty";
+                return "Safety";
         }
         return "";
     }
