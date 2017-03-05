@@ -9,9 +9,11 @@ import javax.swing.*;
 import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SortedSoft extends JDialog {
+    public static int COUNT_SUBCONSTRACTOR;
     private JPanel contentPane;
     private JButton button1;
     private JComboBox<String> comboBox1;
@@ -26,8 +28,11 @@ public class SortedSoft extends JDialog {
     private JComboBox<String> comboBox5;
 
 
-    public SortedSoft(List<Subcontractor> sub) {
-        Criterion c = new Criterion();
+    public SortedSoft() {
+        List<Subcontractor> sub = new ArrayList<>();
+        for (int i = 0; i < COUNT_SUBCONSTRACTOR; i++) {
+            sub.add(new Subcontractor());
+        }
         setTitle("Поиск наилучшего решения");
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setContentPane(contentPane);

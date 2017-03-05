@@ -8,17 +8,15 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-        Subcontractor s = new Subcontractor();
+       ArrayList<Subcontractor> sub = new ArrayList<>();
 
-        ArrayList<Subcontractor> sub = new ArrayList<>();
+//        for(int i = 0; i < 100; i++){
+//            sub.add(new Subcontractor());
+//            System.out.println(sub.get(i));
+//
+//        }
 
-        for(int i = 0; i < 100; i++){
-            sub.add(new Subcontractor());
-            System.out.println(sub.get(i));
-
-        }
-
-        MainDialog dialog = new MainDialog(sub);
+        MainDialog dialog = new MainDialog();
         dialog.pack();
         dialog.setVisible(true);
         //System.exit(0);
