@@ -40,7 +40,7 @@ public class MainDialog extends JDialog {
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                GeneretData generetData = new GeneretData();
+                GenerateData generetData = new GenerateData();
                 generetData.pack();
                 generetData.setVisible(true);
             }
