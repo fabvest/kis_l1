@@ -68,10 +68,10 @@ public class SortedSoft extends JDialog {
         comboBox5.addItem(Criterion.opportunitiesCriterion[2]);
         comboBox5.addItem(Criterion.opportunitiesCriterion[3]);
 
-        comboBox4.addItem(Criterion.saiftyCriterion[0]);
-        comboBox4.addItem(Criterion.saiftyCriterion[1]);
-        comboBox4.addItem(Criterion.saiftyCriterion[2]);
-        comboBox4.addItem(Criterion.saiftyCriterion[3]);
+        comboBox4.addItem(Criterion.safetyCriterion[0]);
+        comboBox4.addItem(Criterion.safetyCriterion[1]);
+        comboBox4.addItem(Criterion.safetyCriterion[2]);
+        comboBox4.addItem(Criterion.safetyCriterion[3]);
 
         TableModel model = new MyTableModel(sub);
         table1.setModel(model);

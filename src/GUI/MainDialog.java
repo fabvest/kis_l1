@@ -25,7 +25,7 @@ public class MainDialog extends JDialog {
         setModal(true);
 
 
-        button1.setText("Найти наилучшее решение");
+        button1.setText("Find best resolution");
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -36,7 +36,7 @@ public class MainDialog extends JDialog {
             }
         });
 
-        button2.setText("Сгенерировать данные");
+        button2.setText("Generate date");
         button2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -46,7 +46,7 @@ public class MainDialog extends JDialog {
             }
         });
 
-        button3.setText("Выход");
+        button3.setText("Exit");
         button3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

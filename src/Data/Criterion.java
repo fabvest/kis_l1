@@ -12,10 +12,10 @@ public class Criterion {
     };
 
     public static final String[] qualityCriterion ={
-            "Really best",
-            "Best",
+            "Bad",
             "Good",
-            "Bad"
+            "Best",
+            "Really best"
     };
 
     public static final String[] priceCriterion = {
@@ -25,7 +25,7 @@ public class Criterion {
             "Until 1000 rubles/day"
     };
 
-    public static final String[] saiftyCriterion = {
+    public static final String[] safetyCriterion = {
         "non safe",
             "little more safe",
             "much safe",
