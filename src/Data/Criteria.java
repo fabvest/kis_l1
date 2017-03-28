@@ -2,9 +2,6 @@ package Data;
 
 import java.util.Random;
 
-/**
- * Created by fab on 26.02.2017.
- */
 public class Criteria {
     private int id;
     private int price;

@@ -14,7 +14,6 @@ public class SortFunc {
     public List<Subcontractor> sort(int time, int quality, int price, int opportunities, int saifty) {
         int flag = flagWeight(time, quality, price, opportunities, saifty);
         return sortWithParams(findWeight(time, quality, price, opportunities, saifty, flag), flag);
-
     }
 
     public SortFunc() {
@@ -24,6 +23,7 @@ public class SortFunc {
         this.sub = sub;
     }
 
+    //Установкафлага в зависимости от выставленных весов
     public int flagWeight(int time, int quality, int price, int opportunities, int saifty) {
         int flag = 0;
         if ((time == quality) && (price == opportunities) && (saifty == time) && (time == price)) {
@@ -40,10 +40,9 @@ public class SortFunc {
             }
         } else flag = 0;
 
-
         return flag;
     }
-
+    //Вычисление ненормированных и нормированных коэффициентов
     public List<Double> findWeight(int time, int quality, int price, int opportunities, int saifty, int flag) {
         List<Double> doubles = new ArrayList<>();
         List<Double> notNormal = new ArrayList<>();
@@ -79,7 +78,7 @@ public class SortFunc {
             return doubles;
         }
     }
-
+    //Ранжирование и сортировка списка
     public List<Subcontractor> sortWithParams(List<Double> doubles, int flag) {
         Subcontractor s;
         Criteria c;
@@ -91,7 +90,7 @@ public class SortFunc {
                 s = sub.get(i);
                 c = s.getCriteria();
                 r = s.getReliability();
-
+                //Установка весов для каждого субподрядчика
                 s.setRang(c.getTime() * doubles.get(0) + c.getQuality() * doubles.get(1) +
                         c.getPrice() * doubles.get(2) + c.getOpportunities() * doubles.get(3) +
                         r.getResult() * doubles.get(4));
