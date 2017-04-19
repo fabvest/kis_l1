@@ -38,4 +38,15 @@ public class Criterion {
             "AI and some like this",
             "Can programming everything"
     };
+
+    public static final String[] tableRowNames = {
+            "W1",
+            "W2",
+            "W3",
+            "W4",
+            "W5",
+            "W6",
+            "W7",
+            "W8",
+    };
 }

@@ -5,7 +5,9 @@
     <constraints>
       <xy x="48" y="54" width="892" height="553"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-4440260"/>
+    </properties>
     <border type="none"/>
     <children>
       <splitpane id="8679b">
