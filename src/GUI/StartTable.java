@@ -67,6 +67,7 @@ public class StartTable implements TableModel{
         return false;
     }
 
+    @SuppressWarnings("Duplicates")
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         WorkValues values = list.get(rowIndex);

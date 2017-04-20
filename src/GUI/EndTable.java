@@ -1,9 +1,11 @@
 package GUI;
 
 import Data.Criterion;
+import Data.WorkValues;
 
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,9 +14,15 @@ import java.util.Set;
  */
 public class EndTable implements TableModel {
     private Set<TableModelListener> listeners = new HashSet<>();
+    private ArrayList<WorkValues> list;
+
+    public EndTable(ArrayList<WorkValues> list) {
+        this.list = list;
+    }
+
     @Override
     public int getRowCount() {
-        return 8;
+        return list.size();
     }
 
     @Override
@@ -51,7 +59,7 @@ public class EndTable implements TableModel {
     @Override
     public Class<?> getColumnClass(int columnIndex) {
         if(columnIndex == 0) return String.class;
-        return Double.class;
+        return Integer.class;
     }
 
     @Override
@@ -59,11 +67,29 @@ public class EndTable implements TableModel {
         return false;
     }
 
+    @SuppressWarnings("Duplicates")
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
+        WorkValues values = list.get(rowIndex);
         switch (columnIndex){
             case 0:
                 return Criterion.tableRowNames[rowIndex];
+            case 1:
+                return values.getValueWithIndex(columnIndex - 1);
+            case 2:
+                return values.getValueWithIndex(columnIndex - 1);
+            case 3:
+                return values.getValueWithIndex(columnIndex - 1);
+            case 4:
+                return values.getValueWithIndex(columnIndex - 1);
+            case 5:
+                return values.getValueWithIndex(columnIndex - 1);
+            case 6:
+                return values.getValueWithIndex(columnIndex - 1);
+            case 7:
+                return values.getValueWithIndex(columnIndex - 1);
+            case 8:
+                return values.getValueWithIndex(columnIndex - 1);
         }
         return null;
     }
