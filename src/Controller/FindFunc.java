@@ -3,6 +3,7 @@ package Controller;
 import Data.WorkValues;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -11,13 +12,14 @@ import java.util.List;
 public class FindFunc {
     private List<WorkValues> list;
     int[][] matrix;
+    int[][] matrixEnd;
 
     public FindFunc(List<WorkValues> list) {
         this.list = list;
     }
 
     private int[][] findM(){
-        int[][] matrixEnd = new int[matrix.length][matrix.length];
+        matrixEnd = new int[matrix.length][matrix.length];
         for(int i = 0; i < matrix.length; i++){
             int min = getMinM(i, matrix);
             for (int j = 0; j < matrix.length; i++){
@@ -28,7 +30,10 @@ public class FindFunc {
     }
 
     private int[][] findLastM(int[][] matr){
+        HashMap<Integer, Integer> values = new HashMap<>();
         int sum = 0;
+        int tmp = 0;
+        int[] tmpMas = new int[8];
         for(int i = 0; i < matr.length; i++){
             for (int j = 0; j < matr.length; j++) {
                 if (matr[i][j] == 0) {
@@ -38,11 +43,35 @@ public class FindFunc {
         }
         for(int i = 0; i < matr.length; i++){
             for (int j = 0; j < matr.length; j++) {
-                sum += matr[j][i];
+                if(matr[j][i] == 1){
+                    tmpMas[j] = matrixEnd[j][i];
+                }
+                //sum += matr[j][i];
             }
-            if(sum == 0){
+            int min = tmpMas[0];
+            for(int c = 1; c < tmpMas.length; c++){
+                if(min > tmpMas[c]){
+                    min = tmpMas[c];
+                    tmp = c;
+                    values.put(i, c);
+                    if(sameValInMap(values, i, c)){
+                        values.remove(i);
+                        tmp = 9;
+                    }else break;
+                }else {
+                    values.put(i, 0);
+                    if(sameValInMap(values, i, 0)){
+                        values.remove(i);
+                        tmp = 9;
+                    }else break;
+                }
+            }
+            for(int q = 0; q < tmpMas.length; q++){
+                if(q != tmp){
+                    matr[q][i] = 0;
+                }
+            }
 
-            }
         }
     }
 
@@ -54,6 +83,19 @@ public class FindFunc {
             }
         }
         return min;
+    }
+
+    private boolean sameValInMap(HashMap<Integer, Integer> val, int i, int c){
+        if(val.size() > 1){
+            for(int it = 0; it < val.size(); it++){
+                if(i != it){
+                    if(val.get(it) == c){
+                        return true;
+                    }else return false;
+                }
+            }
+        }else return false;
+        return false;
     }
 
     private void getMatrix(){
