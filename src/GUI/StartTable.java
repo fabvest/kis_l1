@@ -35,7 +35,7 @@ public class StartTable implements TableModel{
     public String getColumnName(int columnIndex) {
         switch (columnIndex){
             case 0:
-                return "  ";
+                return "qq";
             case 1:
                 return "Р1";
             case 2:
@@ -59,7 +59,7 @@ public class StartTable implements TableModel{
     @Override
     public Class<?> getColumnClass(int columnIndex) {
         if(columnIndex == 0) return String.class;
-        return Integer.class;
+        else return Integer.class;
     }
 
     @Override

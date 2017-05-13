@@ -15,14 +15,19 @@ import java.util.Set;
 public class EndTable implements TableModel {
     private Set<TableModelListener> listeners = new HashSet<>();
     private ArrayList<WorkValues> list;
+    private int[][] matr;
 
     public EndTable(ArrayList<WorkValues> list) {
         this.list = list;
     }
 
+    public EndTable(int[][] matr) {
+        this.matr = matr;
+    }
+
     @Override
     public int getRowCount() {
-        return list.size();
+        return matr.length;
     }
 
     @Override
@@ -70,26 +75,26 @@ public class EndTable implements TableModel {
     @SuppressWarnings("Duplicates")
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        WorkValues values = list.get(rowIndex);
+
         switch (columnIndex){
             case 0:
                 return Criterion.tableRowNames[rowIndex];
             case 1:
-                return values.getValueWithIndex(columnIndex - 1);
+                return matr[rowIndex][columnIndex - 1];
             case 2:
-                return values.getValueWithIndex(columnIndex - 1);
+                return matr[rowIndex][columnIndex - 1];
             case 3:
-                return values.getValueWithIndex(columnIndex - 1);
+                return matr[rowIndex][columnIndex - 1];
             case 4:
-                return values.getValueWithIndex(columnIndex - 1);
+                return matr[rowIndex][columnIndex - 1];
             case 5:
-                return values.getValueWithIndex(columnIndex - 1);
+                return matr[rowIndex][columnIndex - 1];
             case 6:
-                return values.getValueWithIndex(columnIndex - 1);
+                return matr[rowIndex][columnIndex - 1];
             case 7:
-                return values.getValueWithIndex(columnIndex - 1);
+                return matr[rowIndex][columnIndex - 1];
             case 8:
-                return values.getValueWithIndex(columnIndex - 1);
+                return matr[rowIndex][columnIndex - 1];
         }
         return null;
     }

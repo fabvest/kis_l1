@@ -11,6 +11,8 @@ import java.util.List;
 
 public class MainDialog extends JFrame {
 
+
+
     private JPanel contentPane;
     JButton button1;
     private JButton button2;
