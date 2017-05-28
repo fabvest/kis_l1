@@ -6,9 +6,6 @@ import java.util.*;
 
 import static GUI.ChooseDialog.TOTALS;
 
-/**
- * Created by fab on 17.04.2017.
- */
 public class FindFunc {
     private List<WorkValues> list;
     int[][] matrix = new int[8][8];
@@ -69,7 +66,7 @@ public class FindFunc {
                 int b;
                 while (flag) {
                     for (b = 0; b < tmpMas.length; b++) {
-                        if (min > tmpMas[b] && tmpMas[b] != 0) { //TODO смотреть ниже, переписать.
+                        if (min > tmpMas[b] && tmpMas[b] != 0) {
                             min = tmpMas[b];
                             temp = b;
                         }
@@ -89,9 +86,7 @@ public class FindFunc {
                 int b;
                 while (flag) {
                     for (b = 0; b < tmpMas.length; b++) {
-                        if (min > tmpMas[b] && tmpMas[b] != 0) { //TODO смотреть ниже, переписать. проблема в том, что первое знаечение
-                            //большинстве случаев = 0, и соответственно, каждое следующее ненулевое значение будет всегда
-                            //больше. нужно инициализировать все значения максимальным интом, а те, которые присваиваются в ифе - из матрицы
+                        if (min > tmpMas[b] && tmpMas[b] != 0) {
                             min = tmpMas[b];
                             temp = b;
                         }
@@ -121,14 +116,12 @@ public class FindFunc {
             boolean flag = true;
 
             int sum = 0;
-            int sum2 = 0;
             int[] tmpMas = new int[matrl.length];
 
             int temp1 = 0;
             int min = Integer.MAX_VALUE;
             for (int j = 0; j < matrl.length; j++) {
                 sum += matrl[j][i];
-                sum2 += matrl[i][j];
                 tmpMas[j] = matrix[j][i];
             }
             if(sum == 0) {

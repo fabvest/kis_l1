@@ -9,9 +9,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Created by fab on 17.04.2017.
- */
 public class StartTable implements TableModel{
     private Set<TableModelListener> listeners = new HashSet<>();
     private List<WorkValues> list;

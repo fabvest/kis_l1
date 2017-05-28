@@ -1,12 +1,8 @@
 package Data;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
-/**
- * Created by fab on 17.04.2017.
- */
 public class WorkValues {
     ArrayList<Integer> values;
 
@@ -15,7 +11,7 @@ public class WorkValues {
         Random r = new Random();
 
         for(int i = 0; i < 8; i++){
-            values.add(r.nextInt(10) + r.nextInt(10) + 2);
+            values.add((r.nextInt(10) + 1) + (r.nextInt(10) + 1));
         }
     }
 
