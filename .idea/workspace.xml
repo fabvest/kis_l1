@@ -6,15 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9124f10-f992-4b0e-9ebc-76ec3ec446a6" name="Default" comment="Last steps of find">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/SimplexMethod.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GUI/SimplexMethod.java" />
+    <list default="true" id="b9124f10-f992-4b0e-9ebc-76ec3ec446a6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/error.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/FindFunc.java" afterPath="$PROJECT_DIR$/src/Controller/FindFunc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data/WorkValues.java" afterPath="$PROJECT_DIR$/src/Data/WorkValues.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/MainDialog.form" afterPath="$PROJECT_DIR$/src/GUI/MainDialog.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/MainDialog.java" afterPath="$PROJECT_DIR$/src/GUI/MainDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GUI/StartTable.java" afterPath="$PROJECT_DIR$/src/GUI/StartTable.java" />
     </list>
     <ignored path="soft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimplexMethod.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimplexMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/SimplexMethod.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="316">
@@ -72,6 +67,16 @@
                 <element signature="e#17607#17608#0" expanded="true" />
                 <element signature="e#17641#17642#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,6 +144,7 @@
         <option value="$PROJECT_DIR$/src/GUI/SimplexMethod.form" />
         <option value="$PROJECT_DIR$/result.txt" />
         <option value="$PROJECT_DIR$/src/GUI/SimplexMethod.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -149,9 +155,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
+    <option name="x" value="-58" />
+    <option name="width" value="1694" />
     <option name="height" value="1026" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -732,7 +737,7 @@
       <workItem from="1494785023084" duration="6279000" />
       <workItem from="1494838033552" duration="1694000" />
       <workItem from="1496002457444" duration="659000" />
-      <workItem from="1496005597834" duration="6715000" />
+      <workItem from="1496005597834" duration="6841000" />
     </task>
     <task id="LOCAL-00001" summary="add new methods (find flag and find weight)">
       <created>1488460496721</created>
@@ -811,7 +816,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494713793460</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="sm">
+      <created>1496012370004</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1496012370004</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -823,7 +835,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115260000" />
+    <option name="totallyTimeSpent" value="115386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,7 +847,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-58" y="0" width="1694" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -848,7 +860,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3113102" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15709047" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15728274" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -920,7 +932,8 @@
     <MESSAGE value="half of find func. some troubles with algorithm" />
     <MESSAGE value="Last steps of find" />
     <MESSAGE value="In the find method there are inaccuracies but mainly it works correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="In the find method there are inaccuracies but mainly it works correctly" />
+    <MESSAGE value="sm" />
+    <option name="LAST_COMMIT_MESSAGE" value="sm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -949,13 +962,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/SortFunc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Data/Subcontractor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
@@ -1429,6 +1435,14 @@
             <element signature="e#17607#17608#0" expanded="true" />
             <element signature="e#17641#17642#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
